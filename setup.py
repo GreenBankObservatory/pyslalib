@@ -19,11 +19,12 @@ ext1 = Extension(name = 'pyslalib.slalib',
 if __name__ == "__main__":
     setup(name = 'pySLALIB',
           description       = "f2py and numpy based wrappers for SLALIB",
-          version           = "1.0.4",
+          version           = "1.0.5b1",
           author            = "Scott Ransom",
           author_email      = "sransom@nrao.edu",
           packages = ['pyslalib'],
           package_dir = {'pyslalib': 'lib'},
           package_data = {'pyslalib': ['docstring_pickle.pkl']},
-          ext_modules = [ext1]
+          ext_modules = [ext1],
+          install_requires = ["numpy"]
           )
